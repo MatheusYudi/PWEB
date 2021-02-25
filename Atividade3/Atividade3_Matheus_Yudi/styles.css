@@ -1,0 +1,129 @@
+header {
+    border: 1px solid white;
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
+}
+header > h2 {
+    text-align: left;
+    color: rgb(252, 146, 32);
+}
+
+h3 {
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(252, 146, 32);
+}
+
+p {
+    display: block;
+    text-align: justify;
+    text-indent: 60px;
+}
+
+object {
+    width: 100%;
+    height: 120px;
+}
+object:hover {
+    background-color: bisque;
+}
+object:hover, fieldset {
+    border-radius: 15px;
+}
+
+fieldset {
+    width: fit-content;
+}
+
+footer {
+    border-radius: 15px 0px 0px 15px;
+}
+footer {
+    position: fixed;
+    text-align: left;
+    right: 0;
+    bottom: 30px;
+    padding: 5px;
+    border: 1px solid;
+    border-right: none;
+}
+footer, footer a {
+    color: transparent;
+}
+footer:hover {
+    color: black;
+    background-color: white;
+}
+
+body {
+    margin: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+.ref-title {
+    font-style: italic;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.head header {
+    align-self: center;
+}
+
+span, a {
+    display: block;
+    margin: 5px 0px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 920px) {
+    fieldset {
+        width: auto;
+    }
+
+    object {
+        background-color: bisque;
+        border-radius: 15px;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    header > h2 {
+        text-align: center;
+    }
+}

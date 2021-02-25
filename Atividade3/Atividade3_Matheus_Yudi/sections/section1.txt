@@ -1,0 +1,7 @@
+    Segundo relatório da GSMA, o Brasil é o país com mais smartphones conectados da América Latina. Até o fim de 2017, foram contabilizadas mais de 234 milhões de conexões, e a tendência é que esse número seja cada vez maior. Além disso, o tráfego de dados via mobile aumenta, em média, 50% a cada ano.
+
+    O relatório Cisco Mobile Data Traffic Forecast prevê que o tráfego mobile global atingirá um zettabyte ao final de 2022. Totalizando 1 trilhão de gigabytes em dados circulando pela rede. Segundo esse estudo, o tráfego móvel cresceu 17 vezes nos últimos cinco anos, e as projeções são de que esse tipo de navegação será responsável por 20% do tráfego em 2022, contra 5% em 2010.
+
+    Contrariando o tradicional formato de desenvolvimento focado em desktops e frames maiores, o conceito de mobile first defende a elaboração de aplicações e sistemas web a partir de dispositivos móveis, isto é, na construção e na formação do layout primeiramente se leva em consideração a usabilidade e a acessibilidades do projeto voltando-se para as plataformas mobile e então uma posterior adaptação/implementação em plataformas desktop deve ser pensada.
+    
+    O conceito de mobile first foi desenvolvido entre 2009 e 2010 pelo diretor de produto do Google, Luke Wroblewski. E o próprio buscador, anunciou em 2018 que estaria trabalhando na criação de um novo indexador de resultados de buscas exclusivamente para pesquisas feitas via mobile, o que mostra o interesse da empresa em se manter como principal mecanismo de pesquisa nesse novo cenário.
