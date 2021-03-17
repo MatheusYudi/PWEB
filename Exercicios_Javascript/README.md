@@ -1,1 +1,2 @@
-# Exercícios de JS
+# Exercícios JS
+Repositório para exercícios de JS
