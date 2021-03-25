@@ -36,11 +36,11 @@ const optionPlayer = Number(prompt('Digite uma opção - Pedra (1), Papel (2), T
 if (options[optionPlayer]) {
     const { won, message } = youWon(optionIA, optionPlayer);
     
-    alert(tie(optionIA, optionPlayer) ? 'Empate' : `Você ${won ? 'ganhou' : 'perdeu'} !`);
+    alert(tie(optionIA, optionPlayer) ? 'Empate' : `Você ${ won ? 'ganhou' : 'perdeu' } !`);
     
     document.write(`
-        <b>${message}</b><br>
-        <li>IA -> ${options[optionIA]} (${optionIA})</li>
-        <li>Você -> ${options[optionPlayer]} (${optionPlayer})</li>
+        <b>${ message }</b><br>
+        <li>IA -> ${ options[optionIA] } (${ optionIA })</li>
+        <li>Você -> ${ options[optionPlayer] } (${ optionPlayer })</li>
     `);
 };
