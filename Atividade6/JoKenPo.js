@@ -43,9 +43,7 @@ if (options[optionPlayer]) {
 
         alert(`Você ${ won ? 'ganhou' : 'perdeu' } !`);
 
-        document.write(`
-            <b>${ message }</b><br>
-        `);
+        document.write(`<b>${ message }</b><br>`);
     }
 
     document.write(`
