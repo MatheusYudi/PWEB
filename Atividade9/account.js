@@ -28,6 +28,40 @@ const ContaPoupanca = function() {
 ContaCorrente.prototype = new Conta();
 ContaPoupanca.prototype = new Conta();
 
+const setDadosCorrente = (conta) => {
+    conta.setSaldoEspecial(prompt('Saldo Especial'));
+};
+const getDadosCorrente = (conta) => {
+    document.write(`
+        <p>Saldo Especial</p>
+        <li>${conta.getSaldoEspecial()}</li>
+    `);
+};
+
+const setDadosPoupanca = (conta) => {
+    conta.setJuros(prompt('Juros'));
+    conta.setDataVencimento(prompt('Data de Vencimento'));
+};
+const getDadosPoupanca = (conta) => {
+    document.write(`
+        <p>Juros</p>
+        <li>${conta.getJuros()}</li>
+        <p>Data de Vencimento</p>
+        <li>${conta.getDataVencimento()}</li>
+    `);
+};
+
+const setupContas = {
+    1: {
+        get: getDadosCorrente,
+        set: setDadosCorrente
+    },
+    2: {
+        get: getDadosPoupanca,
+        set: setDadosPoupanca
+    }
+};
+
 const tipoConta = prompt('Conta Corrente ou Poupança (1 ou 2)');
 
 if (tipoConta) {
@@ -38,13 +72,7 @@ if (tipoConta) {
     objConta.setNumeroConta(prompt('Número da Conta'));
     objConta.setSaldo(prompt('Saldo'));
 
-    if (tipoConta == 1) {
-        objConta.setSaldoEspecial(prompt('Saldo Especial'));
-    }
-    else {
-        objConta.setJuros(prompt('Juros'));
-        objConta.setDataVencimento(prompt('Data de Vencimento'));
-    }
+    setupContas[tipoConta].set(objConta);
     
     document.write(`
         <p>Nome do Correntista</p>
@@ -56,19 +84,6 @@ if (tipoConta) {
         <p>Saldo</p>
         <li>${objConta.getSaldo()}</li>
     `);
-    
-    if (tipoConta == 1) {
-        document.write(`
-            <p>Saldo Especial</p>
-            <li>${objConta.getSaldoEspecial()}</li>
-        `);
-    }
-    else {
-        document.write(`
-            <p>Juros</p>
-            <li>${objConta.getJuros()}</li>
-            <p>Data de Vencimento</p>
-            <li>${objConta.getDataVencimento()}</li>
-        `);
-    }
+
+    setupContas[tipoConta].get(objConta);
 };
