@@ -33,8 +33,7 @@ const setDadosCorrente = (conta) => {
 };
 const getDadosCorrente = (conta) => {
     document.write(`
-        <p>Saldo Especial</p>
-        <li>${conta.getSaldoEspecial()}</li>
+        <li>Saldo Especial: <b>${conta.getSaldoEspecial()}</b></li>
     `);
 };
 
@@ -44,19 +43,19 @@ const setDadosPoupanca = (conta) => {
 };
 const getDadosPoupanca = (conta) => {
     document.write(`
-        <p>Juros</p>
-        <li>${conta.getJuros()}</li>
-        <p>Data de Vencimento</p>
-        <li>${conta.getDataVencimento()}</li>
+        <li>Juros: <b>${conta.getJuros()}</b></li>
+        <li>Data de Vencimento: <b>${conta.getDataVencimento()}</b></li>
     `);
 };
 
 const setupContas = {
     1: {
+        type: 'Corrente',
         get: getDadosCorrente,
         set: setDadosCorrente
     },
     2: {
+        type: 'Poupanca',
         get: getDadosPoupanca,
         set: setDadosPoupanca
     }
@@ -75,14 +74,11 @@ if (tipoConta) {
     setupContas[tipoConta].set(objConta);
     
     document.write(`
-        <p>Nome do Correntista</p>
-        <li>${objConta.getNomeCorrentista()}</li>
-        <p>Banco</p>
-        <li>${objConta.getBanco()}</li>
-        <p>Número da Conta</p>
-        <li>${objConta.getNumeroConta()}</li>
-        <p>Saldo</p>
-        <li>${objConta.getSaldo()}</li>
+        <p><b>Tipo de Conta: ${setupContas[tipoConta].type.toUpperCase()}</b></p>
+        <li>Nome do Correntista: <b>${objConta.getNomeCorrentista()}</b></li>
+        <li>Banco: <b>${objConta.getBanco()}</b></li>
+        <li>Número da Conta: <b>${objConta.getNumeroConta()}</b></li>
+        <li>Saldo: <b>${objConta.getSaldo()}</b></li>
     `);
 
     setupContas[tipoConta].get(objConta);
