@@ -1,0 +1,9 @@
+.container {
+    text-align: center;
+    margin: auto;
+}
+
+.window {
+    height: 452px;
+    width: 452px;
+}
