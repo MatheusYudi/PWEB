@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!-- Favicon -->
+		<link rel="icon" href="assets/icons/feather/feather.svg">
+		<title>Matheus Yudi</title>
+
+		<!-- Meta -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- W3.css -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<!-- Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+		<!-- Custom Stylesheets -->
+		<link rel="stylesheet" href="styles/styles.css" />
+	</head>
+
+	<body class="w3-light-gray">
+		<!-- Theme Selection -->
+		<div id="theme-selection" class="w3-black w3-container w3-padding-64 w3-center">
+			<h1 class="theme-selection__header w3-jumbo w3-margin-bottom w3-animate-opacity">
+				Choose
+			</h1>
+			<div class="w3-row">
+				<span class="w3-half w3-animate-left w3-padding-48" onclick="activateDarkMode()">
+					<img class="w3-image theme-selection__icon" src="assets/icons/feather/moon.svg" alt="moon"/>
+				</span>
+				<span class="w3-half w3-animate-right w3-padding-48" onclick="activateLightMode()">
+					<img class="w3-image theme-selection__icon" src="assets/icons/feather/sun.svg" alt="sun"/>
+				</span>
+			</div>
+		</div>
+
+		<!-- Main Content -->
+		<div id="main-content" hidden>
+			<!-- SideMenu -->
+			<nav id="sidemenu" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+				<a href="#work" class="w3-hover-light-gray w3-bar-item w3-button w3-padding-large">
+					<img class="w3-image" src="assets/icons/feather/airplay.svg" alt="airplay"/>
+					Work
+				</a>
+				<a href="#about" class="w3-hover-light-gray w3-bar-item w3-button w3-padding-large">
+					<img class="w3-image" src="assets/icons/feather/book-open.svg" alt="book-open"/>
+					About
+				</a>
+				<a href="#contact" class="w3-hover-light-gray w3-bar-item w3-button w3-padding-large">
+					<img class="w3-image" src="assets/icons/feather/inbox.svg" alt="inbox"/>
+					Contact
+				</a>
+			</nav>
+			<div id="sidemenu__dark-mode" title="Toggle Dark Mode" class="w3-padding-large" onclick="toggleDarkMode()">
+				<img class="w3-image" src="assets/icons/feather/moon.svg" alt="moon"/>
+				<img class="w3-image w3-hide-small" src="assets/icons/feather/sun.svg" alt="sun"/>
+			</div>
+
+			<!-- TopMenu -->
+			<div id="topmenu" class="w3-animate-top w3-top w3-hide-medium w3-hide-large">
+				<div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+					<img
+						onclick="toggleTopMenuOptions(this)"
+						class="topmenu__item w3-bar-item w3-button w3-hover-light-gray"
+						src="assets/icons/feather/menu.svg"
+						alt="menu" />
+					<a hidden href="#work" class="topmenu__item w3-bar-item w3-button w3-hover-light-gray">
+						Work
+					</a>
+					<a hidden href="#about" class="topmenu__item w3-bar-item w3-button w3-hover-light-gray">
+						About
+					</a>
+					<a hidden href="#contact" class="topmenu__item w3-bar-item w3-button w3-hover-light-gray">
+						Contact
+					</a>
+				</div>
+			</div>
+
+			<!-- Sections -->
+			<div id="sections" class="w3-padding-large">
+				<!-- Home -->
+				<section id="home" class="w3-center w3-content w3-padding-32">
+					<h1 class="w3-jumbo w3-animate-opacity">
+						Matheus Yudi
+					</h1>
+					<p class="w3-animate-opacity">
+						Web Developer
+					</p>
+				</section>
+
+				<hr class="section__divider w3-amber w3-animate-zoom" />
+
+				<!-- About -->
+				<section id="about" class="w3-content w3-padding-32 w3-text-gray w3-justify">
+					<h2 class="w3-center w3-text-black">
+						About me
+					</h2>
+					<div class="about__description w3-justify">
+						<p>
+							Sou desenvolvedor junior e um entusiasta de tecnologia.
+						</p>
+						<p>Atualmente trabalho na
+							<a class="w3-hover-text-green" href="https://helpper.com.br/" target="_blank">
+								<b>Helpper</b>
+							</a>
+							como desenvolvedor e curso <b>Análise e Desenvolvimento de Sistemas na</b>
+							<a class="w3-hover-text-red" href="http://www.fatecsorocaba.edu.br/" target="_blank">
+								<b>Fatec Sorocaba.</b>
+							</a>
+						</p>
+						<p>
+							Meus interesses incluem praticar esportes, especialmente <b class="w3-hover-text-orange">Tênis de Mesa</b> e <b class="w3-hover-text-orange">Basquete</b>,
+							estar com os amigos e desenvolver sistemas.
+						</p>
+					</div>
+
+					<!-- Skills -->
+					<div id="skills" class="w3-padding-32">
+						<div class="skill pointer w3-hover-text-amber w3-margin-top w3-wide w3-animate-left">
+							<p class="skill__description">
+								HTML
+							</p>
+							<div class="skill__container w3-dark-gray">
+								<div id="skill-1" class="skill__percentage w3-center w3-pink w3-animate-opacity" percentage="55%" ></div>
+							</div>
+						</div>
+
+						<div class="skill pointer w3-hover-text-amber w3-margin-top w3-wide w3-animate-right">
+							<p class="skill__description">
+								CSS
+							</p>
+							<div class="skill__container w3-dark-gray">
+								<div id="skill-2" class="skill__percentage w3-center w3-blue w3-animate-opacity" percentage="40%" ></div>
+							</div>
+						</div>
+
+						<div class="skill pointer w3-hover-text-amber w3-margin-top w3-wide w3-animate-left">
+							<p class="skill__description">
+								Javascript
+							</p>
+							<div class="skill__container w3-dark-gray">
+								<div id="skill-3" class="skill__percentage w3-center w3-green w3-animate-opacity" percentage="80%" ></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<hr class="section__divider w3-amber w3-animate-zoom" />
+
+				<!-- My Work -->
+				<section id="work" class="w3-content w3-padding-32">
+					<h2 class="w3-center w3-text-black">My Work</h2>
+
+					<!-- Projects -->
+					<div id="projects" class="w3-hide-small w3-hide-medium">
+						<div class="w3-row-padding">
+							<div class="w3-half">
+								<a class="pointer w3-hover-text-amber" href="https://github.com/MatheusYudi/PWEB" target="_blank">
+									<img class="w3-image" src="assets/images/github-project.png" alt="image"/>
+									<p>
+										PWEB
+									</p>
+								</a>
+								Repositório para projetos e exercícios da matéria de ES2
+							</div>
+							<div class="w3-half">
+								<a class="pointer w3-hover-text-amber" href="https://github.com/MatheusYudi/ES2" target="_blank">
+									<img class="w3-image" src="assets/images/github-project.png" alt="image"/>
+									<p>
+										ES2
+									</p>
+								</a>
+								Repositório para projetos e exercícios da matéria de ES2
+							</div>
+						</div>
+						<div class="w3-row-padding w3-padding-top-24">
+							<div class="w3-half">
+								<a class="pointer w3-hover-text-amber" href="https://rh.infraero.gov.br/" target="_blank">
+									<img class="w3-image" src="assets/images/populis.png" alt="image"/>
+									<p>
+										Populis V3
+									</p>
+								</a>
+								Projeto FrontEnd da glr Populis para a Infraero
+							</div>
+							<div class="w3-half">
+								<a class="pointer w3-hover-text-amber" href="https://collabore-v2-stage.web.app/auth/login" target="_blank">
+									<img class="w3-image" src="assets/images/collabore.jpg" alt="image"/>
+									<p>
+										Collabore
+									</p>
+								</a>
+								Projeto de Sistema de Gestão de tarefas
+							</div>
+						</div>
+					</div>
+
+					<!-- Carousel -->
+					<div id="projects-carousel" class="carousel slide w3-hide-large" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#projects-carousel" data-slide-to="1"></li>
+							<li data-target="#projects-carousel" data-slide-to="2"></li>
+							<li data-target="#projects-carousel" data-slide-to="3"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="w3-image w3-block" src="assets/images/github-project.png" alt="First slide" />
+							</div>
+							<div class="carousel-item">
+								<img class="w3-image w3-block" src="assets/images/github-project.png" alt="Second slide" />
+							</div>
+							<div class="carousel-item">
+								<img class="w3-image" src="assets/images/populis.png" alt="image"/>
+							</div>
+							<div class="carousel-item">
+								<img class="w3-image" src="assets/images/collabore.jpg" alt="image"/>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">
+								Previous
+							</span>
+						</a>
+						<a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">
+								Next
+							</span>
+						</a>
+					</div>
+				</section>
+
+				<hr class="section__divider w3-amber w3-animate-zoom" />
+
+				<!-- Contact -->
+				<section id="contact" class="w3-content w3-center w3-padding-32 w3-text-gray w3-xlarge">
+					<h2 class="w3-center w3-text-black">
+						Contact me
+					</h2>
+
+					<a title="Sorocaba, SP" class="w3-padding-small" href="https://goo.gl/maps/zrHHBJm7ZNVnba4J6" target="_blank">
+						<img class="w3-image" src="assets/icons/feather/map-pin.svg" alt="map-pin"/>
+					</a>
+					<a title="+55 11 95336-6860" class="w3-padding-small" href="tel:+5511953366860">
+						<img class="w3-image" src="assets/icons/feather/phone-call.svg" alt="phone-call"/>
+					</a>
+					<a title="matheus.silva279@fatec.sp.gov.br" class="w3-padding-small" href="mailto:matheus.silva279@fatec.sp.gov.br">
+						<img class="w3-image" src="assets/icons/feather/mail.svg" alt="mail"/>
+					</a>
+					<a title="LinkedIn" class="w3-padding-small" href="https://br.linkedin.com/in/matheus-yudi-sano-silva-397b06181" target="_blank">
+						<img class="w3-image" src="assets/icons/feather/linkedin.svg" alt="linkedin"/>
+					</a>
+					<a title="GitHub" class="w3-padding-small" href="https://github.com/MatheusYudi" target="_blank">
+						<img class="w3-image" src="assets/icons/feather/github.svg" alt="github"/>
+					</a>
+				</section>
+			</div>
+
+			<!-- Footer -->
+			<footer class="w3-center w3-padding-large w3-padding-top-64" title="Scroll to Top">
+				<a href="#">
+					<img class="w3-image" src="assets/icons/feather/chevrons-up.svg" alt="arrows-up" /> Scroll to top
+				</a>
+			</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="scripts/topmenu.js"></script>
+		<script type="text/javascript" src="scripts/darkmode.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+
+</html>
