@@ -13,7 +13,7 @@
             <h1>Formulário Principal</h1>
             <hr style="margin: 50px 10%;">
 
-            <form action="teste" method="POST" name="form" id="form" onsubmit="return validateForm();">
+            <form method="POST" name="form" id="form" onsubmit="return validateForm();">
                 <div class="center">
                     <label for="nome">Nome:</label>
                     <br>
@@ -30,10 +30,10 @@
                 <footer class="center">
                     <div class="survey" style="margin: 50px 0px;">
                         Primeira vez nesta página?
-                        <input type="radio" id="upper" name="type" onclick="survey(true)" />
-                        <label for="upper">Sim</label>
-                        <input type="radio" id="lower" name="type" onclick="survey(false)" />
-                        <label for="lower">Não</label>
+                        <input type="radio" id="yes" name="type" checked />
+                        <label for="yes">Sim</label>
+                        <input type="radio" id="no" name="type" />
+                        <label for="no">Não</label>
                     </div>
 
                     <input name="submit" type="submit" form="form" value="Enviar">
