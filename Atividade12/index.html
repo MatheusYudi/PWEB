@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Atividade12</title>
+
+        <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+        <div class="center" style="padding: 40px">
+            <h1>Formulário Principal</h1>
+            <hr style="margin: 50px 10%;">
+
+            <form action="teste" method="POST" name="form" id="form" onsubmit="return validateForm();">
+                <div class="center">
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input name="nome" type="text" id="nome" minlength="10">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input name="email" type="email" id="email">
+                    <br><br>
+                    <label for="nome">Comentário:</label>
+                    <br>
+                    <textarea name="comentario" id="comentario" minlength="20"></textarea>
+                </div>
+                <footer class="center">
+                    <div class="survey" style="margin: 50px 0px;">
+                        Primeira vez nesta página?
+                        <input type="radio" id="upper" name="type" onclick="survey(true)" />
+                        <label for="upper">Sim</label>
+                        <input type="radio" id="lower" name="type" onclick="survey(false)" />
+                        <label for="lower">Não</label>
+                    </div>
+
+                    <input name="submit" type="submit" form="form" value="Enviar">
+                    <input name="reset" type="reset" form="form" value="Limpar">
+                </footer>
+            </form>
+        </div>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>

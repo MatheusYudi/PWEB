@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+input, textarea {
+    border-radius: 4px;
+}
