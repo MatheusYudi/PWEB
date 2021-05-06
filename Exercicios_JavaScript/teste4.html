@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste This</title>
+</head>
+
+<body>
+    <script>
+
+    function contrario(p) {
+        var aux;
+        alert(p.length);
+        for (var i=0, j=p.length-1;i<p.length-1;i++,j--)
+        {    
+            alert("i="+i+" j="+j);
+        aux=p[i];
+        p[i]=p[j];
+            //alert(p[j]);
+            //alert(p[i]);
+        p[j]=aux;
+        //alert(p[j]);
+        }
+        return;
+    }
+        
+        var frase=prompt("digite uma frase");
+        alert(contrario(frase));
+    </script>
+        </body>
+
+</html>

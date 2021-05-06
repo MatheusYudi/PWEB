@@ -23,7 +23,7 @@ body {
 .meio {
    	width: 750px;
 	min-height: 400px;
-	background-color: #cccccc;
+	background-color: skyblue;
 }
 
 
@@ -61,7 +61,7 @@ body {
 
 .item_miolo {
 	width: 428px;
-	height: 100px;
+	height: 150px;
 	text-align: center;
 	background-color: #cccccc;
 	margin: 2px 5px 4px 5px;
