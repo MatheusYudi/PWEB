@@ -8,9 +8,9 @@
 <script>
 
     function benchmark(n) {
-    var maxPI = 0;
+    let maxPI = 0;
     console.time("tempo gasto");
-    for (var i = 0; i < n; i++) {
+    for (let i = 0; i < n; i++) {
         maxPI += Math.PI * i;
     }
     console.log("Max PI: ", maxPI);

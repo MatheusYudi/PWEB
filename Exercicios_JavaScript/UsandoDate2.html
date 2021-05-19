@@ -1,14 +1,14 @@
 <html>
 <script>
 	function mostra_relogio() {
-		var hoje = new Date(); //data atual
-		var horas = hoje.getHours();
-		var minutos = hoje.getMinutes();
-		var segundos = hoje.getSeconds();
+		let hoje = new Date(); //data atual
+		let horas = hoje.getHours();
+		let minutos = hoje.getMinutes();
+		let segundos = hoje.getSeconds();
 		
 		// colocando um zero à esquerda
 		
-		var val_horas = ((horas < 10) ? "0" : "") + horas;
+		let val_horas = ((horas < 10) ? "0" : "") + horas;
 		val_horas += ((minutos < 10) ? ":0" : ":") + minutos;
 		val_horas += ((segundos < 10) ? ":0" : ":") + segundos;
 		

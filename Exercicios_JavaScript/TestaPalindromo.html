@@ -6,7 +6,7 @@
     <title>Testando se sao palindromos</title>
 
      <script>
-        var novoArray = [1, 6, 10, 15, 40, 30, 16, 26, 25, 2];
+        let novoArray = [1, 6, 10, 15, 40, 30, 16, 26, 25, 2];
         novoArray.reverse();
         novoArray.sort();
         alert(novoArray);
@@ -16,19 +16,19 @@
      <h2> Teste </h2> 
      <p id = "teste" > < /p> 
      <script>
-         var linguagens = ["C#", "Delphi", "Java"];
+         let linguagens = ["C#", "Delphi", "Java"];
          document.getElementById("teste").innerHTML = linguagens;
      </script>
 
 <script>
-    var divida_inicial = 2000;
+    let divida_inicial = 2000;
 
     function atualizar_divida(recebe) {
         divida_inicial -= recebe;
         return divida_inicial
     }
 
-    for (var i = 0; i <= 12; i++)
+    for (let i = 0; i <= 12; i++)
         atualizar_divida(85);
 
     alert(divida_inicial);
@@ -38,21 +38,21 @@
          
         
    <script>
-        var a = 3;
-        var b = 6;
-        var c = -3;
-        var d = 4.5;
-        var e = "5";
-        var resultado1;
+        let a = 3;
+        let b = 6;
+        let c = -3;
+        let d = 4.5;
+        let e = "5";
+        let resultado1;
         resultado1 = ((b * c) + (a * 17) * b) - 2 * 2.5;
         alert(resultado1);
-        var resultado2;
+        let resultado2;
         resultado2 = e+3;
          alert(resultado2);
-         var resultado3;
+         let resultado3;
         resultado3 =  (d > 2 ? 1 : 0)+b; 
         alert(resultado3);
-        var resultado4= 10;
+        let resultado4= 10;
         resultado4 += e;
         alert(resultado4);   
   </script>
@@ -60,7 +60,7 @@
         <script>
             < script >
                 function teste() {
-                    var letras = [];
+                    let letras = [];
                     while (true) {
                         letras.push('A');
                         letras.push('B');
@@ -82,9 +82,9 @@
         function testar(par1) {
             par1 = par1.replace(/ /g, "");
 
-            var auxiliar1 = par1.toUpperCase().split('').join('');
+            let auxiliar1 = par1.toUpperCase().split('').join('');
 
-            var auxiliar2 = par1.toUpperCase().split('').reverse().join('');
+            let auxiliar2 = par1.toUpperCase().split('').reverse().join('');
 
 
             if (auxiliar1 == auxiliar2)
@@ -95,7 +95,7 @@
 
         }
 
-        var entrada = prompt("digite uma palavra");
+        let entrada = prompt("digite uma palavra");
 
         alert(testar(entrada));
     </script>

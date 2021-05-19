@@ -15,20 +15,20 @@
 			this.owner = owner;
 
 			this.displayCar = function () {
-				var result = " Big Car " + this.year + " " + this.make + " " + this.model;
+				let result = " Big Car " + this.year + " " + this.make + " " + this.model;
 				alert(result);
 			}
 
 		};
 
 		// função criada  internamente
-		var meuCarro1 = new car1("marca1", "modelo1", "ano1", "proprietario1");
+		let meuCarro1 = new car1("marca1", "modelo1", "ano1", "proprietario1");
 		meuCarro1.displayCar();
 
 
         //criando a função externamente
 		function displayCar() {
-			var result = " Big Car " + this.year + " " + this.make + " " + this.model;
+			let result = " Big Car " + this.year + " " + this.make + " " + this.model;
 			alert(result);
 		};
 
@@ -40,7 +40,7 @@
 			this.displayCar = displayCar; //atribuindo a função
 		};
 
-		var meuCarro2 = new car2("marca2", "modelo2", "ano2", "proprietario2");
+		let meuCarro2 = new car2("marca2", "modelo2", "ano2", "proprietario2");
 		meuCarro2.displayCar();
 	</script>
 </body>

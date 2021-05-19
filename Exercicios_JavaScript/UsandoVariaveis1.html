@@ -3,31 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Utilizando variáveis</title>
+    <title>Utilizando letiáveis</title>
 
     <script>
-        /* VARIAVEIS GLOBAIS */
+        /* letIAVEIS GLOBAIS */
 
-        var resultado;
-        var resultado2; /* sem atribuição fica UNDEFINED */
-        var resultado3;
-        var resultado4;
-        var resultado5 = "Conteúdo 5";
-        var resultado6 = "Conteúdo 6";
+        let resultado;
+        let resultado2; /* sem atribuição fica UNDEFINED */
+        let resultado3;
+        let resultado4;
+        let resultado5 = "Conteúdo 5";
+        let resultado6 = "Conteúdo 6";
 
 
 
         resultado = prompt("Qual é o seu nome?");
 
-        var teste = function () {
-            var resultado6="nao adianta mudar"; 
+        let teste = function () {
+            let resultado6="nao adianta mudar"; 
             /* assume como a global já existente */
 
             resultado5; /* está local */
 
-            resultado7 = "dentro da função"; /* não existe global com esse nome, SEM VAR fica acessível globalmente */
+            resultado7 = "dentro da função"; /* não existe global com esse nome, SEM let fica acessível globalmente */
 
-            resultado3 = "mudei dentro da função"; /* usando variável global */
+            resultado3 = "mudei dentro da função"; /* usando letiável global */
             resultado5 = "Conteúdo 5 na função"
 		    return "resultado da função";
         }

@@ -8,9 +8,9 @@
 
 
         function criaCookie() {
-            var linha1 = document.form1.seunome.value;
-            var linha2 = "*" + document.URL;
-            var linha3 = "*" + hoje.toGMTString();
+            let linha1 = document.form1.seunome.value;
+            let linha2 = "*" + document.URL;
+            let linha3 = "*" + hoje.toGMTString();
             document.cookie = linha1 + linha2 + linha3;
         };
 
@@ -23,10 +23,10 @@
 
 
         function getCookie(cookieSeuNome) {
-            var c_name = document.cookie; // listando o nome de todos os cookies
+            let c_name = document.cookie; // listando o nome de todos os cookies
             if (c_name != undefined && c_name.length > 0) // verificando se o mesmo existe
             {
-                var posCookie = c_name.indexOf(cookieSeuNome); // checando se existe o cookieS+ euNome 
+                let posCookie = c_name.indexOf(cookieSeuNome); // checando se existe o cookieS+ euNome 
                 if (posCookie >= 0) {
                     alert("Cookie Existe!!!");
                 } else {

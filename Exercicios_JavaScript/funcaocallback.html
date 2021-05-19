@@ -18,11 +18,11 @@
             return 2;
         }
 
-        var x = invoke_and_add(one, two);
+        let x = invoke_and_add(one, two);
 
         alert(x);
 
-        var y = invoke_and_add(function() {
+        let y = invoke_and_add(function() {
             return 1;
         }, function() {
             return 2;
@@ -46,7 +46,7 @@
         soma(20,function(resultado) {                   
         alert("resultado="+resultado);});
         
-        var s = soma(20,function(){return 10;});
+        let s = soma(20,function(){return 10;});
         alert("s="+s);
     </script>
 </head>

@@ -25,46 +25,46 @@ Raw  index.html
     <script type="text/javascript">
 			$(function() {
 				$("#form-equacao").submit(function() {
-				    var mensagem;
-				    var a = $('#num1').val();
-					var b = $('#num2').val();
-					var c = $('#num3').val();
+				    let mensagem;
+				    let a = $('#num1').val();
+					let b = $('#num2').val();
+					let c = $('#num3').val();
                     if(a === "" && b ==="" &&  c == ""){
-						var mensagem = ("Voce deve prencher todos os campos!");
+						let mensagem = ("Voce deve prencher todos os campos!");
 						$('#num1').addClass("campo-erro");
 						$('#num2').addClass("campo-erro");
 						$('#num3').addClass("campo-erro");
 					}else if(a ==="" && b === ""){
-					    var mensagem = ("Você deve preencher  os campos a e b!");
+					    let mensagem = ("Você deve preencher  os campos a e b!");
 						$('#num1').addClass("campo-erro");
 						$('#num2').addClass("campo-erro");
 					}else if(a ==="" && c === ""){
-						var mensagem = ("Você deve preencher  os campos a e c !");
+						let mensagem = ("Você deve preencher  os campos a e c !");
 						$('#num1').addClass("campo-erro");
 						$('#num3').addClass("campo-erro");
 					}else if(b ==="" && c === ""){
-						var mensagem = ("Você deve preencher  os campos b e c !");
+						let mensagem = ("Você deve preencher  os campos b e c !");
 						$('#num2').addClass("campo-erro");
 						$('#num3').addClass("campo-erro");
 					}else if(a === ""){
-						var mensagem = ("Você deve preencher  o campo a !");
+						let mensagem = ("Você deve preencher  o campo a !");
 						$('#num1').addClass("campo-erro");
 					}else if(b === ""){
-						var mensagem = ("Você deve preencher o campo b !");
+						let mensagem = ("Você deve preencher o campo b !");
 						$('#num2').addClass("campo-erro");
 					}
 					else if(c === ""){
-						var mensagem = ("Você deve preencher o campo c !");
+						let mensagem = ("Você deve preencher o campo c !");
 						$('#num3').addClass("campo-erro");
 					}
 					 $('#mensagem').val(mensagem);
 					if(a != 0 && b != 0){
-						var delta = Math.pow(b , 2) - ((4 * a)*c);	
+						let delta = Math.pow(b , 2) - ((4 * a)*c);	
 					}
 					if( delta > 0){
-						var deltaR = Math.sqrt(delta);
-						var  x1 = ((-b +  deltaR)  /(2 * a));
-						var  x2 = ((-b -  deltaR)  /(2 * a));
+						let deltaR = Math.sqrt(delta);
+						let  x1 = ((-b +  deltaR)  /(2 * a));
+						let  x2 = ((-b -  deltaR)  /(2 * a));
 					}else{
 						x1 = ("Sem raiz");
 						x2 = ("Sem raiz");

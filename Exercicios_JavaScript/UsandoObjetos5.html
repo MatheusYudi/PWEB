@@ -11,7 +11,7 @@
 
 	<script>
 	
-var Pessoa = function(nome, email) {
+let Pessoa = function(nome, email) {
      this.nome =  nome;
  
      // verifica se o e-mail foi preenchido
@@ -26,11 +26,11 @@ var Pessoa = function(nome, email) {
 
 Pessoa.prototype.email = "contato@fatec.sp.gov.br.br";
  
-var  pedro= new Pessoa("Pedro Marcos"); //não foi colocado o e-mail aqui mas já tinha
+let  pedro= new Pessoa("Pedro Marcos"); //não foi colocado o e-mail aqui mas já tinha
 alert(pedro.email); // imprime contato@fatec.sp.gov.br
  
 // ou passo da forma comum
-var joao = new Pessoa("Joao da Silva", "joao@da.silva"); // aqui colocou e-mail
+let joao = new Pessoa("Joao da Silva", "joao@da.silva"); // aqui colocou e-mail
 alert(joao.email); // joao@da.silva
 
 	</script>

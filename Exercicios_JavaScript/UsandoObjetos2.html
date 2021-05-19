@@ -18,12 +18,12 @@
 		};
 
 		function displayCar() {
-			var result = " Big Car " + this.year + " " + this.make + " " + this.model;
+			let result = " Big Car " + this.year + " " + this.make + " " + this.model;
 			alert(result);
 		}
 
 		// se tivesse a function Car1 já criada acrescento no objeto
-		var meuCarro1 = new car1("marca1", "modelo1", "ano1", "proprietario1");
+		let meuCarro1 = new car1("marca1", "modelo1", "ano1", "proprietario1");
 		meuCarro1.displayCar = displayCar;
 
 		meuCarro1.displayCar();
@@ -37,7 +37,7 @@
 			this.displayCar = displayCar;
 		};
 
-		var meuCarro2 = new car2("marca2", "modelo2", "ano2", "proprietario2");
+		let meuCarro2 = new car2("marca2", "modelo2", "ano2", "proprietario2");
 		meuCarro2.displayCar();
 	</script>
 

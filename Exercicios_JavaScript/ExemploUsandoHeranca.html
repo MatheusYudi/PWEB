@@ -9,7 +9,7 @@
 <body>
     <script>
         function Pessoa() { // “superclasse”
-            var nome;
+            let nome;
             this.getNome = function () {
                 return nome;
             };
@@ -19,7 +19,7 @@
         }
 
         function PessoaJuridica() { // “subclasse”
-            var cnpj;
+            let cnpj;
             this.getCNPJ = function () {
                 return cnpj;
             };
@@ -29,7 +29,7 @@
         }
 
         function PessoaFisica() { // “subclasse”
-            var cpf;
+            let cpf;
             this.getCPF = function () {
                 return cpf;
             };

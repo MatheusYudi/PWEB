@@ -18,14 +18,14 @@
             return document.querySelector(id);
         }
 
-        var numeroVezes = 20000;
+        let numeroVezes = 20000;
 
         console.profile("Testando getElementById() x querySelector()");
         
-        for (var i = 0; i < numeroVezes; ++i)
+        for (let i = 0; i < numeroVezes; ++i)
             getById("teste");
         
-        for (var i = 0; i < numeroVezes; ++i)
+        for (let i = 0; i < numeroVezes; ++i)
             getViaSelector("teste");
         
         console.profileEnd();

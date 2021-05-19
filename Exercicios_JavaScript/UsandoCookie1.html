@@ -5,11 +5,11 @@
     <script>
         // recebe o nome do cookie e dias para expirar 
         function criaCookie(name, exdays) { //função para criar cookie
-            var expires;
+            let expires;
 
-            var date;
+            let date;
 
-            var value;
+            let value;
             date = new Date(); //  data atual
             // correspondente a um dia
             date.setTime(date.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -19,10 +19,10 @@
         }
 
         function leCookie(name) {
-            var c_name = document.cookie; // listando o nome de todos os cookies
+            let c_name = document.cookie; // listando o nome de todos os cookies
             if (c_name != undefined && c_name.length > 0) // verificando se o mesmo existe
             {
-                var posCookie = c_name.indexOf(name); // checando se existe o cookie 
+                let posCookie = c_name.indexOf(name); // checando se existe o cookie 
                 if (posCookie >= 0) //se existir o cookie mostra um alert 
                 {
                     alert("Cookie encontrado!!!");

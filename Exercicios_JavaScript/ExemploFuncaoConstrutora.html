@@ -12,9 +12,9 @@
             this.firstname = first;
             this.lastname = last;
             this.age = age;
-            var bankBalance = 7500;
+            let bankBalance = 7500;
 
-            var returnBalance = function () { //metodo privado
+            let returnBalance = function () { //metodo privado
                 return bankBalance;
             };
 
@@ -24,10 +24,10 @@
             }
         }
 
-        var john = new Person('John', 'Smith', 30);
+        let john = new Person('John', 'Smith', 30);
         console.log(john.returnBalance); //undefined
-        var myBalanceMethod = john.askTeller();
-        var myBalance = myBalanceMethod();
+        let myBalanceMethod = john.askTeller();
+        let myBalance = myBalanceMethod();
         console.log(myBalance); //7500
     </script>
 

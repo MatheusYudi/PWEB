@@ -10,9 +10,9 @@
     <script>
 
     function contrario(p) {
-        var aux;
+        let aux;
         alert(p.length);
-        for (var i=0, j=p.length-1;i<p.length-1;i++,j--)
+        for (let i=0, j=p.length-1;i<p.length-1;i++,j--)
         {    
             alert("i="+i+" j="+j);
         aux=p[i];
@@ -25,7 +25,7 @@
         return;
     }
         
-        var frase=prompt("digite uma frase");
+        let frase=prompt("digite uma frase");
         alert(contrario(frase));
     </script>
         </body>

@@ -7,14 +7,14 @@
 
 <body>
     <script>
-        var divida= 5000;
+        let divida= 5000;
 
         function atualizar_divida(recebe) {
             divida -= recebe;
             return divida;
         }
 
-        for (var i = 0; i < 12; i++)
+        for (let i = 0; i < 12; i++)
             atualizar_divida(300);
         
         alert(divida);

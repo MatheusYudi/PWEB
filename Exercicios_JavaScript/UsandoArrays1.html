@@ -9,10 +9,10 @@
 <body>
 	<script>
 		//declarando  com os dados - 3 strings
-		var nomes = ["Clarice Lispector", "Carlos Drumond", "José de Alencar"];
+		let nomes = ["Clarice Lispector", "Carlos Drumond", "José de Alencar"];
 
 		//omitindo o operador New
-		var idades = Array(3);
+		let idades = Array(3);
 		idades[0] = 10;
 		idades[1] = 20;
 		idades[2] = 30;
@@ -20,13 +20,13 @@
 
 
 		//omitindo o operador com dados, notacao literal
-		var cidades = Array("Sorocaba");
+		let cidades = Array("Sorocaba");
 
 		//tipos de dados diferentes
-		var misturados = [34, "doce", "azul", 11];
+		let misturados = [34, "doce", "azul", 11];
 
 		// array vazio
-		var nada = [];
+		let nada = [];
 
 
 		alert("nomes: " + nomes + " comprimento:" + nomes.length);
@@ -36,12 +36,12 @@
 		alert("nada:" + nada + " comprimento:" + nada.length);
 
 
-		var cores2 = ["vermelho", "azul", "verde"];
+		let cores2 = ["vermelho", "azul", "verde"];
 		cores2.length = 3;
 		//incluiu
 		alert(cores2[0] + " " + cores2[1] + " " + cores2[2] + " " + cores2[3]); //undefined
 
-		var cores1 = ["vermelho", "azul", "verde"];
+		let cores1 = ["vermelho", "azul", "verde"];
 		cores1.length = 2;
 		//excluiu
 		alert(cores1[2]); //undefined

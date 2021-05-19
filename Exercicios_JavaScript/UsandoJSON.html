@@ -6,16 +6,16 @@
     <title>Testando JSON</title>
 
     <script>
-        var txt = '{"funcionarios":[' +
+        let txt = '{"funcionarios":[' +
             '{"nome":"Pedro","sobrenome":"Antunes" },' +
             '{"nome":"José","sobrenome":"Egea" },' +
             '{"nome":"Maria","sobrenome":"Santos" }]}';
 
       //  Para pegar os dados usar eval ou parse
 
-         var obj = eval("(" + txt + ")");
+         let obj = eval("(" + txt + ")");
 
-          var obj2 = JSON.parse(txt);        
+          let obj2 = JSON.parse(txt);        
         
         // mostrando a posicao 1
         alert(obj.funcionarios[0].nome);

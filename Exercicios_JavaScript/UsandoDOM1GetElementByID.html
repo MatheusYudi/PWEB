@@ -22,8 +22,8 @@
 		txt = document.getElementById("primeiro").innerText;
 		document.write("<p>Texto do parágrafo primeiro: " + txt + "</p>");
 		
-		var x = document.getElementsByName("check");
-		var i;
+		let x = document.getElementsByName("check");
+		let i;
 		for (i = 0; i < x.length; i++) {
 			if (x[i].type == "checkbox") {
 				x[i].checked = true;
