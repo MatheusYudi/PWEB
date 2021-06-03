@@ -1,17 +1,17 @@
 module.exports = (app) => {
-    app.get('/info/teachers', (_, res) => {
+    app.get('/info/teachers/detail', (_, res) => {
 
         const connection = app.config.connection;
         const teacherModel = app.models.teacher;
 
-        teacherModel.list(connection, (error, results) => {
+        teacherModel.get(connection, (error, results) => {
             if (error) {
                 console.error(error);
                 res.send(error);
                 return;
             }
 
-            res.render('info/teachers', { data: results });
+            res.render('info/teachers_detail', { data: results });
         });
 
     });
