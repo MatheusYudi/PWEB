@@ -1,9 +1,0 @@
-@media only screen and (max-width: 600px) {
-	.about__description, #skills {
-		padding: 0 !important;
-	}
-
-	body {
-		background: none !important;
-	}
-}
