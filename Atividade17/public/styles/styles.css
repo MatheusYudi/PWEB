@@ -1,0 +1,153 @@
+/* Imports */
+@import url('responsive.css');
+@import url('scrollbar.css');
+
+* {
+	margin: 0rem;
+	padding: 0rem;
+	outline: 0rem;
+	scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: Roboto;
+}
+
+body {
+	background-size: 3700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('../assets/icons/feather/navigation.svg');
+}
+
+h2 {
+	margin: 0rem 0rem 1.5rem 0rem;
+}
+
+a {
+	background-color: transparent !important;
+	text-decoration: none !important;
+}
+a:hover {
+	color: inherit;
+	text-decoration: none !important;
+}
+
+#theme-selection {
+	width: 100vw;
+	height: 100vh;
+}
+.theme-selection__icon {
+	height: 3rem;
+	width: 3rem;
+	transition: transform 0.5s;
+}
+.theme-selection__icon:hover {
+	transform: scale(2);
+}
+
+#topmenu {
+	position: fixed !important;
+}
+.topmenu__item {
+	width: 25% !important;
+}
+#topmenu img {
+	height: 2.125rem;
+}
+
+#sidemenu {
+	right: -4.65rem;
+	width: 6.25rem;
+	transition: right 0.5s;
+}
+#sidemenu:hover {
+	right: 0rem;
+}
+#sidemenu__dark-mode {
+	position: fixed;
+	bottom: 0rem;
+	z-index: 3;
+}
+#sidemenu:before {
+	content: url('../assets/icons/feather/chevron-left.svg');
+	left: 0rem;
+	position: absolute;
+}
+
+#home .row .col-md-5 {
+	margin-top: 15%;
+}
+
+#projects {
+	margin: 0 -1rem;
+}
+#projects img {
+	height: fit-content;
+	width: fit-content;
+	max-height: 12.5rem;
+	max-width: 25rem;
+}
+a.pointer.w3-hover-text-amber p:hover {
+	scale: 0.5;
+}
+
+#email-info {
+	overflow-wrap: break-word;
+}
+
+.section__divider {
+	height: 0.188rem;
+	margin: 0 15%;
+}
+
+.about__description, #skills {
+	padding: 0rem 20%;
+}
+
+.pointer {
+	cursor: pointer;
+}
+.skill__percentage {
+	width: 0;
+	height: 1.75rem;
+	transition: width 1s ease;
+}
+.skill:hover .skill__percentage:after {
+	content: attr(percentage);
+}
+.skill:hover #skill-1 {
+	width: 55%;
+}
+.skill:hover #skill-2 {
+	width: 40%;
+}
+.skill:hover #skill-3 {
+	width: 80%;
+}
+
+.carousel-indicators .active {
+	background-color: #ffc107 !important;
+}
+.carousel-item img {
+	height: 100%;
+	width: 100%;
+}
+
+.w3-image {
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+.w3-animate-right, .w3-animate-left {
+	animation-duration: 1s !important;
+}
+.w3-animate-zoom {
+	animation-duration: 3s !important;
+}
+.w3-row-padding img {
+	margin-bottom: 0.75rem;
+}
+.w3-text-blue, .w3-hover-text-blue:hover {
+	color: #5AA0E4 !important
+}
